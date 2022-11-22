@@ -10,7 +10,8 @@ This installs the dependencies and creates the node modules folder.
 Copy this repo to your local git repository 
 
 Executing tests
-npm run *script-name-here* - runs the tests specified for this script in the package.json file
+
+npm run *script-name-here* - this runs the tests specified for this script in the package.json file
 
 eg. to run the signup test , the command is:
 
