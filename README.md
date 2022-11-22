@@ -14,7 +14,6 @@ Executing tests
 npm run *script-name-here* - this runs the tests specified for this script in the package.json file
 
 eg. to run the signup test , the command is:
-
 npm run signup
 
 
