@@ -38,17 +38,3 @@ describe('signup for the application', () => {
 
 
 
-// describe('SauceLabs Login', () => {
-//     for(const record of sauceLabsLoginData){
-//         it(`should attempt to login the ${record.username}`, async () => {
-//             await SauceLabsLoginPage.open(); //opening the page 
-//             await SauceLabsLoginPage.login(record.username, record.password); //attempting to login with username and password
-//             if(record.username === "invalid_user" || record.username === "locked_out_user"){ //checking if user is invalid or locked out.
-//                 await expect(browser).toHaveUrl(record.expectedUrl); //if user is invalid or locked out im checking to see that they're at the correct url
-//                 await expect(SauceLabsLoginPage.loginMessage).toHaveTextContaining(record.message); //if user is invalid or locked out im checking to see that they receive the correct error message
-//             } else {
-//                 await expect(browser).toHaveUrl(record.expectedUrl); //user isn't invalid or locked out. so i'm checking to see that they're at the correct url
-//             }
-//         });
-//     }
-// })
