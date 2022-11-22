@@ -28,7 +28,9 @@ purchase
 
 confirmationtest
 
-
+Note: 
 signup and confirmationtest both account for negative paths
+
 signup and addproduct are both data driven test
+
 tests have been configured to run on the Chrome and Safari browsers
