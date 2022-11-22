@@ -16,3 +16,14 @@ npm run *script-name-here* - this runs the tests specified for this script in th
 eg. to run the signup test , the command is:
 
 npm run signup
+
+
+The recommended order to run the tests is:
+signup
+addproduct
+purchase
+confirmationtest
+
+signup and confirmationtest both account for negative paths
+signup and addproduct are both data driven test
+tests have been configured to run on the Chrome and Safari browsers
