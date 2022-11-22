@@ -10,28 +10,26 @@ describe('signup for the application', () => {
 
         await addproductPage.open();
         await addproductPage.addprodflow();
-        //await browser.url('https://magento.softwaretestingboard.com/circe-hooded-ice-fleece.html');
         await purchasepage.open();
         await purchasepage.purchaseflow('Stephup@mailinator.com','Stephanie','Jones','245 Whitloch road','Pleasant Hill','Des Moines','35235','4567893067');
         await browser.url('https://magento.softwaretestingboard.com/');
         await loginPage.open();
-        await loginPage.login('Stephup@mailinator.com','Stephanie1!');
+
+        // change login credentials below to test a confirmation with user that has orders existing
+        // the following credentials can be used:  'Stephup@mailinator.com','Stephanie1!' 
+        await loginPage.login('norder@mailinator.com','Stephanie1');
         await confirmationpage.open();
 
         await confirmationpage.confirmorderflow();
         
-        if(confirmationpage.flash.toHaveTextContaining('No order')){
+        if(confirmationpage.flash.toHaveTextContaining('no orders')){
             return true;
         }else{
             expect(await confirmationpage.ordernum.toHaveTextContaining('000'));
             await browser.url('https://magento.softwaretestingboard.com/sales/order/history/');
             //return true;
         }
-        //await browser.url('https://magento.softwaretestingboard.com/sales/order/history/');
-       // await signupPage.body.toHaveText("My Account");
-       // await expect(browser).toHaveText("My Account");
-       // await expect(SecurePage.flashAlert).toHaveTextContaining(
-        //    'You logged into a secure area!');
+       
     });
 
 });

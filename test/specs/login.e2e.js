@@ -12,6 +12,7 @@ describe('login to the appliocatio usin the user info provided', () => {
         //     await expect(signupPage.flashmssg).toHaveTextContaining('There is already an account');
         //     await browser.url('https://magento.softwaretestingboard.com/customer/account/create/');
         // }
+        await browser.pause(2000);
         await browser.url('https://magento.softwaretestingboard.com/');
     });
 

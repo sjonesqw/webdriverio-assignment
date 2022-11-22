@@ -26,7 +26,7 @@ class confirmationpage extends Page{
         await this.accountmenu.click();
         await this.myaccount.click();
         await this.myorders.click();
-        //await this.ordernum.isEqual(matchnum);
+        
         
         await browser.url('https://magento.softwaretestingboard.com/sales/order/history/');
     }

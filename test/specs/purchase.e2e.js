@@ -8,7 +8,7 @@ describe('Checkout items in a cart', () =>{
         await addproductPage.open();
         await addproductPage.addprodflow();
         await purchasepage.open();
-        await purchasepage.purchaseflow('mommy2@mailinator.com','Stephanie','Jones','245 Whitloch road','Pleasant Hill','Des Moines','35235','4567893067');
+        await purchasepage.purchaseflow('tweedledum@mailinator.com','Stephanie','Jones','245 Whitloch road','Pleasant Hill','Des Moines','35235','4567893067');
         await browser.url ('https://magento.softwaretestingboard.com/checkout/onepage/success/');
 
 
